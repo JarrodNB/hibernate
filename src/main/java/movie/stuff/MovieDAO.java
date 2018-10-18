@@ -3,7 +3,9 @@ package movie.stuff;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 import java.util.List;
 
@@ -28,10 +30,15 @@ public class MovieDAO {
 
     public Movie getMovie(String title){
         return  entityManager.createQuery("Select * From Movie Where title = " + title, Movie.class).getSingleResult();
+
     }
 
-    public List<Movie> getAll(){
-        return entityManager.createQuery("Select * From Movie", Movie.class).getResultList();
+    public Movie[] getAll(){
+        if (entityManager == null){
+            System.out.println("is null");
+        }
+        List<Movie> results = entityManager.createQuery("From Movie", Movie.class).getResultList();
+        return (Movie[]) results.toArray();
     }
 
     public void updateMovie(Movie movie){

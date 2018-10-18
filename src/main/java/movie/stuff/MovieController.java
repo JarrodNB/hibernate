@@ -1,6 +1,7 @@
 package movie.stuff;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,8 +17,13 @@ public class MovieController {
         movieDAO.createMovie(movie);
     }
 
+    // format not being accepted?
+    @ResponseBody
     @RequestMapping(value="/getMovies", method = RequestMethod.GET)
-    public List<Movie> getMovies(){
+    public Movie[] getMovies(){
+        if (movieDAO == null){
+            System.out.println("dao is null");
+        }
         return movieDAO.getAll();
     }
 

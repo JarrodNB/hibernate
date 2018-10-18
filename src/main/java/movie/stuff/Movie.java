@@ -1,7 +1,10 @@
 package movie.stuff;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Entity
 @Table(name = "movie")
 public class Movie
@@ -14,6 +17,20 @@ public class Movie
     private double rate;
     private String description;
     private int rateNum;
+
+    public Movie(){
+
+    }
+
+    public Movie(String title, String genre, double rate, String description, int rateNum){
+        this.id = id;
+        this.title = title;
+        this.genre = genre;
+        this.rate = rate;
+        this.description = description;
+        this.rateNum = rateNum;
+
+    }
 
     public int getId() {
         return id;
@@ -79,7 +96,7 @@ public class Movie
 
     @Override
     public String toString(){
-        return "ID: " + id + "Title: " + title + "Genre: " + genre + "Rating: " + rate + "Description: " + description;
+        return "ID: " + id + " Title: " + title + " Genre: " + genre + " Rating: " + rate + " Description: " + description;
     }
 
 }
