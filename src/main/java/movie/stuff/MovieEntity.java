@@ -1,13 +1,11 @@
 package movie.stuff;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
-@Table(name = "movie")
-public class Movie
-{
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+@Table(name = "movie", schema = "shows", catalog = "")
+public class MovieEntity {
     private int id;
     private String title;
     private String genre;
@@ -15,6 +13,8 @@ public class Movie
     private String description;
     private int rateNum;
 
+    @Id
+    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -23,52 +23,48 @@ public class Movie
         this.id = id;
     }
 
+    @Basic
+    @Column(name = "title")
     public String getTitle() {
         return title;
     }
 
     public void setTitle(String title) {
-        if (title.length() > 45){
-            title = title.substring(0, 45);
-        }
         this.title = title;
     }
 
+    @Basic
+    @Column(name = "genre")
     public String getGenre() {
         return genre;
     }
 
     public void setGenre(String genre) {
-        if (genre.length() > 45){
-            genre = genre.substring(0, 45);
-        }
         this.genre = genre;
     }
 
+    @Basic
+    @Column(name = "rate")
     public double getRate() {
         return rate;
     }
 
     public void setRate(double rate) {
-        if (rate < 0){
-            rate = 0;
-        } else if (rate > 10){
-            rate = 10;
-        }
         this.rate = rate;
     }
 
+    @Basic
+    @Column(name = "description")
     public String getDescription() {
         return description;
     }
 
     public void setDescription(String description) {
-        if (description.length() > 1000){
-            description = description.substring(0,1000);
-        }
         this.description = description;
     }
 
+    @Basic
+    @Column(name = "rateNum")
     public int getRateNum() {
         return rateNum;
     }
@@ -78,8 +74,20 @@ public class Movie
     }
 
     @Override
-    public String toString(){
-        return "ID: " + id + "Title: " + title + "Genre: " + genre + "Rating: " + rate + "Description: " + description;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MovieEntity that = (MovieEntity) o;
+        return id == that.id &&
+                Double.compare(that.rate, rate) == 0 &&
+                rateNum == that.rateNum &&
+                Objects.equals(title, that.title) &&
+                Objects.equals(genre, that.genre) &&
+                Objects.equals(description, that.description);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, title, genre, rate, description, rateNum);
+    }
 }

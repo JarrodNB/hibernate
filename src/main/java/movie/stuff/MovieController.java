@@ -13,7 +13,7 @@ public class MovieController {
 
     @RequestMapping(value="/createMovie", method = RequestMethod.POST)
     public void createMovie(@RequestBody Movie movie){
-        movieDAO.create(movie);
+        movieDAO.createMovie(movie);
     }
 
     @RequestMapping(value="/getMovies", method = RequestMethod.GET)

@@ -11,12 +11,14 @@ import java.util.List;
 @Transactional
 public class MovieDAO {
 
+    //?username=root&amp;password=Medic68w!
+
     @PersistenceContext
     private EntityManager entityManager;
 
     public MovieDAO(){}
 
-    public void create(Movie movie){
+    public void createMovie(Movie movie){
         entityManager.persist(movie);
     }
 
