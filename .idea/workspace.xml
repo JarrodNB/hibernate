@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1dcba605-85ed-4cf7-90d8-a8b751cd027a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/demo_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/demo_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/movie/stuff/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/movie/stuff/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/movie/stuff/MovieController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/movie/stuff/MovieDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/movie/stuff/MovieDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/movie/stuff/MovieDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/movie/stuff/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/movie/stuff/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/movie/stuff/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/movie/stuff/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/movie/stuff/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/movie/stuff/MovieController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/movie/stuff/MovieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/movie/stuff/MovieDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -81,7 +78,7 @@
           <entry key="gradlew" value="1" />
           <entry key="java" value="24" />
           <entry key="movie" value="1" />
-          <entry key="properties" value="3" />
+          <entry key="properties" value="4" />
           <entry key="sql" value="4" />
           <entry key="xml" value="10" />
         </counts>
@@ -92,7 +89,7 @@
           <entry key="Groovy" value="2" />
           <entry key="JAVA" value="24" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Properties" value="3" />
+          <entry key="Properties" value="4" />
           <entry key="Scratch" value="4" />
           <entry key="UML" value="1" />
           <entry key="XML" value="10" />
@@ -100,17 +97,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1729" />
-          <entry key="properties" value="28" />
+          <entry key="java" value="4439" />
+          <entry key="properties" value="61" />
           <entry key="sql" value="44" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1729" />
+          <entry key="JAVA" value="4437" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Properties" value="28" />
+          <entry key="Properties" value="61" />
+          <entry key="SQL" value="2" />
           <entry key="Scratch" value="44" />
         </counts>
       </usages-collector>
@@ -125,10 +123,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/movie/stuff/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+            <state relative-caret-position="-2244">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#456#457#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,10 +137,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/movie/stuff/MovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+            <state relative-caret-position="221">
+              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#857#858#0" expanded="true" />
+                <element signature="e#901#902#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/movie/stuff/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="24" column="89" selection-start-line="24" selection-start-column="89" selection-end-line="24" selection-end-column="89" />
+            <state relative-caret-position="408">
+              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,12 +167,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/movie/stuff/MovieDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state relative-caret-position="221">
+              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#568#569#0" expanded="true" />
                 <element signature="e#626#627#0" expanded="true" />
+                <element signature="e#1060#1061#0" expanded="true" />
+                <element signature="e#1102#1103#0" expanded="true" />
+                <element signature="e#1140#1141#0" expanded="true" />
+                <element signature="e#1190#1191#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -543,12 +553,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/701957e0-b0d5-4e5d-bb68-fbee50219b14/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/movie/stuff/MovieEntity.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/701957e0-b0d5-4e5d-bb68-fbee50219b14/console_2.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/movie/stuff/MovieDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/movie/stuff/MovieController.java" />
         <option value="$PROJECT_DIR$/src/main/java/movie/stuff/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/movie/stuff/MovieController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/movie/stuff/MovieDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/movie/stuff/Client.java" />
       </list>
     </option>
@@ -559,7 +569,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="15" />
     <option name="y" value="29" />
     <option name="width" value="1340" />
@@ -639,7 +649,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539905011885" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540050543248" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../connector/mysql-connector-java-8.0.12" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -715,48 +725,47 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18758000" />
+    <option name="totallyTimeSpent" value="26228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="29" width="1340" height="709" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Persistence" sideWeight="0.2658228" side_tool="true" visible="true" weight="0.25" />
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.73417723" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7340425" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" weight="0.32869565" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32869565" />
-      <window_info anchor="bottom" id="Spring" weight="0.32869565" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32869565" />
-      <window_info anchor="bottom" id="Hibernate Console" weight="0.32869565" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32869565" />
-      <window_info anchor="bottom" id="Java Enterprise" weight="0.32869565" />
-      <window_info anchor="bottom" id="Database Changes" weight="0.32869565" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info id="Persistence" order="2" sideWeight="0.26595744" side_tool="true" visible="true" weight="0.25" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Image Layers" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31304348" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34608695" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Database" visible="true" weight="0.075" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32869565" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32869565" />
+      <window_info anchor="bottom" id="Database Console" order="9" weight="0.32869565" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32869565" />
+      <window_info anchor="bottom" id="Hibernate Console" order="11" weight="0.32869565" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32869565" />
+      <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32869565" />
+      <window_info anchor="bottom" id="Version Control" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32869565" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.075" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -780,20 +789,14 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.86" x="202.5" y="180.0" />
+          <settings layout="Hierarchic Group" zoom="0.86" x="203.0" y="180.0" />
           <SelectedNodes />
           <Categories>
             <Category>Properties</Category>
             <Category>Embeddables</Category>
             <Category>Superclasses</Category>
           </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -918,39 +921,50 @@
     <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/movie/stuff/MovieContainer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/movie/stuff/MovieContainer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/movie/stuff/MovieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/movie/stuff/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="89" selection-start-line="24" selection-start-column="89" selection-end-line="24" selection-end-column="89" />
+        <state relative-caret-position="221">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/movie/stuff/MovieDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="221">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#568#569#0" expanded="true" />
             <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1190#1191#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/movie/stuff/MovieController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+        <state relative-caret-position="238">
+          <caret line="14" column="58" lean-forward="true" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/movie/stuff/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -959,10 +973,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/movie/stuff/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+        <state relative-caret-position="-2244">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
           </folding>
         </state>
       </provider>

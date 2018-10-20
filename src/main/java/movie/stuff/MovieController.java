@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 public class MovieController {
 
@@ -17,19 +15,19 @@ public class MovieController {
         movieDAO.createMovie(movie);
     }
 
-    // format not being accepted?
-    @ResponseBody
     @RequestMapping(value="/getMovies", method = RequestMethod.GET)
-    public Movie[] getMovies(){
-        if (movieDAO == null){
-            System.out.println("dao is null");
-        }
-        return movieDAO.getAll();
+    public Object[] getMovies(){
+        return movieDAO.getAll().toArray();
     }
 
     @RequestMapping(value = "/getMovie/{id}", method= RequestMethod.GET)
     public Movie getMovie(@PathVariable("id") int id){
         return movieDAO.getMovie(id);
+    }
+
+    @RequestMapping(value = "/getMovieByTitle/{title}", method= RequestMethod.GET)
+    public Movie getMovie(@PathVariable("title") String title){
+        return movieDAO.getMovie(title);
     }
 
     @RequestMapping(value="/updateMovie", method = RequestMethod.PUT)
