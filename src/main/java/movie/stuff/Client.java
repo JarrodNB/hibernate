@@ -69,7 +69,9 @@ public class Client {
         Movie movie = new Movie();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the title");
-        movie.setTitle(scanner.nextLine());
+        String title = scanner.nextLine();
+        if (title.isEmpty()) throw new InputMismatchException();
+        movie.setTitle(title);
         System.out.println("Enter the description");
         movie.setDescription(scanner.nextLine());
         System.out.println("Enter the genre");
@@ -112,11 +114,21 @@ public class Client {
         Scanner scanner = new Scanner(System.in);
         System.out.println("What is the title of the movie");
         String title = scanner.nextLine();
+        if (title.isEmpty()) throw new InputMismatchException();
         Movie movie = getMovie(title);
         if (display){
             System.out.println(movie);
         }
         return movie;
+    }
+
+    private void searchByID() throws MovieDoesNotExistException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the ID of the movie");
+        int id = scanner.nextInt();
+        Movie movie = getMovie(id);
+        if (movie == null) throw new InputMismatchException();
+        System.out.println(movie);
     }
 
     public boolean ui() throws MovieDoesNotExistException {
@@ -127,6 +139,7 @@ public class Client {
         System.out.println("3. Update Movie");
         System.out.println("4. Delete Movie");
         System.out.println("5. Search By Title");
+        System.out.println("6. Search by ID");
         int input = scanner.nextInt();
         switch(input){
             case 0: return false;
@@ -145,6 +158,8 @@ public class Client {
             case 5:
                 searchByTitle(true);
                 break;
+            case 6:
+                searchByID();
             default:
                 System.out.println("Please input just the number");
         }

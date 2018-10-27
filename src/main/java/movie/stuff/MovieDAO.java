@@ -10,8 +10,6 @@ import java.util.List;
 @Transactional
 public class MovieDAO {
 
-    //?username=root&amp;password=Medic68w!
-
     @PersistenceContext
     private EntityManager entityManager;
 
@@ -28,13 +26,11 @@ public class MovieDAO {
     public Movie getMovie(String title){
         title = "'" + title + "'";
         return  entityManager.createQuery("Select m From Movie m Where title = " + title, Movie.class).getSingleResult();
-
     }
 
     public List<Movie> getAll(){
         Query query = entityManager.createQuery("Select m From Movie m", Movie.class);
         return query.getResultList();
-
     }
 
     public void updateMovie(Movie movie){

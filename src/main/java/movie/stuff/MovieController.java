@@ -7,6 +7,20 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class MovieController {
 
+    /**
+     *
+     * POST /createMovie Creates a movie
+     * GET /getMovies Returns all the movies
+     * GET /getMovie/id Returns movie with matching ID
+     * GET /getMovieByTitle Returns movie with matching title
+     * PUT /updateMovie Updates the movie
+     * DELETE /deleteMovie/id Deletes movie with matching ID
+     *
+     */
+
+
+
+
     @Autowired
     private MovieDAO movieDAO;
 

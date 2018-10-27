@@ -96,7 +96,7 @@ public class Movie
 
     @Override
     public String toString(){
-        return "ID: " + id + " Title: " + title + " Genre: " + genre + " Rating: " + rate + " Description: " + description;
+        return "ID: " + id + " Title: " + title + " Genre: " + genre + " Rating: " + rate + "\nDescription: " + description;
     }
 
 }
